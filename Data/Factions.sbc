@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Factions>
+    
+    <Faction Tag="RAIDER" Founder="Raider Commander">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>RaiderFaction</SubtypeId>
+      </Id>
+      <DisplayName>Raiders</DisplayName>
+      <IsDefault>true</IsDefault>
+      <DefaultRelation>Enemies</DefaultRelation>
+      <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+      <StartingBalance>1000000</StartingBalance>
+      <Type>None</Type>
+      <DiscoveredByDefault>false</DiscoveredByDefault>
+      <FactionIcon>Textures\FactionLogo\PirateIcon.dds</FactionIcon>
+    </Faction>
+
+  </Factions>
+</Definitions>

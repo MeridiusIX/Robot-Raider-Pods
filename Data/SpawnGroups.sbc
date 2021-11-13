@@ -1,0 +1,166 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>RobotRaiderPods-SpawnGroup-RaiderPod-Easy</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [DroneEncounter:true]
+        [MinimumPlayerTime:1200]
+        [MaximumPlayerTime:2100]
+        [FailedDroneSpawnResetsPlayerTime:true]
+        [MinDroneDistance:200]
+        [MinDroneDistance:201]
+        [MinDroneAltitude:2100]
+        [MaxDroneAltitude:2200]
+        [DroneInheritsSourceAltitude:true]
+        [DroneEncounterChance:15]
+
+        [MinAirDensity:0.7]
+        [SkipAirDensityCheck:true]
+        [AiEnabledReady:true]
+
+        [FactionOwner:RAIDER]
+        [ReplenishSystems:true]
+        [ReplenishProfiles:RobotRaiderPods-Replenish-IceReplenishLimit]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [UseBlockReplacerProfile:true]
+        [IgnoreGlobalBlockReplacer:true]
+        [BlockReplacerProfileNames:MES-NpcThrusters-Hydro]
+
+        [ConfigureSpecialNpcThrusters:true]
+        [NpcHydroThrustPowerMultiply:0.0001]
+        [NpcHydroThrustForceMultiply:2]
+
+        [OverrideBlockDamageModifier:true]
+        [BlockDamageModifier:20]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMaximum:500]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RRP) Raider Pod">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>RobotRaiderPods-Behavior-PodBehavior</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>RobotRaiderPods-SpawnGroup-RaiderPod</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [DroneEncounter:true]
+        [MinimumPlayerTime:1200]
+        [MaximumPlayerTime:2100]
+        [FailedDroneSpawnResetsPlayerTime:true]
+        [MinDroneDistance:200]
+        [MinDroneDistance:201]
+        [MinDroneAltitude:2100]
+        [MaxDroneAltitude:2200]
+        [DroneInheritsSourceAltitude:true]
+
+        [MinAirDensity:0.7]
+        [SkipAirDensityCheck:true]
+        [AiEnabledReady:true]
+
+        [FactionOwner:RAIDER]
+        [ReplenishSystems:true]
+        [ReplenishProfiles:RobotRaiderPods-Replenish-IceReplenishLimit]
+
+        [UseRivalAi:true]
+        [RivalAiReplaceRemoteControl:true]
+
+        [UseBlockReplacerProfile:true]
+        [IgnoreGlobalBlockReplacer:true]
+        [BlockReplacerProfileNames:MES-NpcThrusters-Hydro]
+
+        [ConfigureSpecialNpcThrusters:true]
+        [NpcHydroThrustPowerMultiply:0.0001]
+        [NpcHydroThrustForceMultiply:2]
+
+        [OverrideBlockDamageModifier:true]
+        [BlockDamageModifier:20]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:750]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-RRP) Raider Pod">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour>RobotRaiderPods-Behavior-PodBehavior</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>RobotRaiderPods-SpawnGroup-Raiders</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [CreatureSpawn:true]
+        [CreatureIds:Police_Bot]
+        [AdminSpawnOnly:true]
+        [AiEnabledModBots:true]
+        [AiEnabledRole:SOLDIER]
+        [FactionOwner:RAIDER]
+        [MinCreatureCount:4]
+        [MaxCreatureCount:4]
+        [MinCreatureDistance:7]
+        [MaxCreatureDistance:9]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <!--Do not edit-->
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="MES-CreaturePrefabDummy">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>25</Speed>
+          <Behaviour></Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>

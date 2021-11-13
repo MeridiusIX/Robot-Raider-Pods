@@ -1,0 +1,47 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>RobotRaiderPods-Trigger-Retreat</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:false]
+        [Type:Timer]
+
+        [MinCooldownMs:5000]
+        [MaxCooldownMs:5001]
+        [StartsReady:false]
+
+        [MaxActions:1]
+        [Actions:RobotRaiderPods-Action-Retreat]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>RobotRaiderPods-Action-Retreat</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [TriggerTimerBlocks:true]
+        [TimerBlockNames:Timer Block - Prop On]
+
+        [Retreat:true]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

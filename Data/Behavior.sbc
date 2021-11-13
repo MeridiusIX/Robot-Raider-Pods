@@ -1,0 +1,70 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>RobotRaiderPods-Behavior-PodBehavior</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Behavior]
+
+        [BehaviorName:Horsefly]
+
+        [AutopilotData:RobotRaiderPods-AutoPilot-CargoShip]
+
+        [Triggers:RobotRaiderPods-Trigger-ArriveAtDrop]
+        [Triggers:RobotRaiderPods-Trigger-EnableSpeedControl]
+        [Triggers:RobotRaiderPods-Trigger-DisableSpeedControl]
+        [Triggers:RobotRaiderPods-Trigger-SpawnEncounters]
+        [Triggers:RobotRaiderPods-Trigger-Retreat]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>RobotRaiderPods-AutoPilot-CargoShip</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Autopilot]
+
+        [SlowDownOnWaypointApproach:true]
+        [ExtraSlowDownDistance:200]
+        [FlyLevelWithGravity:true]
+
+        [IdealMinSpeed:15]
+        [IdealMaxSpeed:100]
+        [MaxSpeedTolerance:5]
+
+        [MinimumPlanetAltitude:1500]
+        [IdealPlanetAltitude:2000]
+
+        [OffsetPlanetMinDistFromTarget:75]
+        [OffsetPlanetMaxDistFromTarget:150]
+        [OffsetPlanetMinTargetAltitude:1600]
+        [OffsetPlanetMaxTargetAltitude:1900]
+
+        [WaypointTolerance:15]
+        [WaypointWaitTimeTrigger:120]
+
+        [MinAngleForLeveledDescent:135]
+        [MaxAngleForLeveledAscent:90]
+
+        [UseVelocityCollisionEvasion:false]
+        [LimitRotationSpeed:true]
+        [MaxRotationMagnitude:0.5]
+
+        [UseVerticalRetreat:true]
+
+      </Description>
+
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

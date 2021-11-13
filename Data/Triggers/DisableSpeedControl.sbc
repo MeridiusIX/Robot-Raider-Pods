@@ -1,0 +1,65 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>RobotRaiderPods-Trigger-DisableSpeedControl</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:false]
+        [Type:Timer]
+
+        [Conditions:RobotRaiderPods-Condition-DisableSpeedControl]
+
+        [MinCooldownMs:1]
+        [MaxCooldownMs:2]
+        [StartsReady:true]
+
+        [MaxActions:-1]
+        [Actions:RobotRaiderPods-Action-DisableSpeedControl]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>RobotRaiderPods-Condition-DisableSpeedControl</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Condition]
+
+        [UseConditions:true]
+
+        [CheckGridSpeed:true]
+        [MaxGridSpeed:125]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>RobotRaiderPods-Action-DisableSpeedControl</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [TriggerTimerBlocks:true]
+        [TimerBlockNames:Timer Block - Prop Off]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

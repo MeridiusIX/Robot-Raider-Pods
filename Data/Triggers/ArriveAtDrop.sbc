@@ -1,0 +1,53 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>RobotRaiderPods-Trigger-ArriveAtDrop</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:BehaviorTriggerA]
+
+        [MinCooldownMs:1]
+        [MaxCooldownMs:2]
+        [StartsReady:true]
+
+        [MaxActions:1]
+        [Actions:RobotRaiderPods-Action-ArriveAtDrop]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>RobotRaiderPods-Action-ArriveAtDrop</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [EnableTriggers:true]
+        [EnableTriggerNames:RobotRaiderPods-Trigger-EnableSpeedControl]
+        [EnableTriggerNames:RobotRaiderPods-Trigger-DisableSpeedControl]
+        [EnableTriggerNames:RobotRaiderPods-Trigger-SpawnEncounters]
+
+        [ChangeBehaviorSubclass:true]
+        [NewBehaviorSubclass:Passive]
+
+        [TriggerTimerBlocks:true]
+        [TimerBlockNames:Timer Block - Prop Off]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

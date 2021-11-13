@@ -1,0 +1,23 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>RobotRaiderPods-Replenish-IceReplenishLimit</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Replenishment]
+
+        [MaxItemId:MyObjectBuilder_Ore/Ice]
+        [MaxItemAmount:2000]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
