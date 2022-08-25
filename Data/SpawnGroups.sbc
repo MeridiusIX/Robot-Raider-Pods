@@ -46,7 +46,8 @@
 
         [UseThreatLevelCheck:true]
         [ThreatLevelCheckRange:10000]
-        [ThreatScoreMaximum:500]
+        [ThreatScoreMinimum:200]
+        [ThreatScoreMaximum:750]
 
       </Description>
       <IsPirate>true</IsPirate>
